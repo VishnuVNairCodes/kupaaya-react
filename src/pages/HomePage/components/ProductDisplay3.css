@@ -1,0 +1,66 @@
+.display-3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  background-color: var(--bg);
+  margin: 0 8.5%;
+}
+
+.display-3-sub-container {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.display-3-img {
+  height: 20rem;
+  object-fit: cover;
+}
+
+.display-3-img:hover {
+  cursor: pointer;
+}
+
+.badge-arrivals {
+  position: absolute;
+  top: 1.2rem;
+  right: 0;
+  z-index: 1;
+  color: var(--white);
+  background-color: var(--primary);
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 7px 0 0 7px;
+}
+
+.display-3-text {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 1;
+  color: var(--white);
+  background-color: var(--black);
+  padding: 0.3rem;
+  border-radius: 0.1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.display-3-img-inner {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  z-index: 1;
+  width: 35%;
+  height: 16rem;
+  object-fit: cover;
+  border: 2px solid var(--white);
+  border-radius: 5px;
+}
+
+.display-3-img-inner:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+  transition: 0.3s;
+}

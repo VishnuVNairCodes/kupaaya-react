@@ -1,0 +1,24 @@
+@import url("https://minnal-ui.netlify.app/styles.css");
+
+:root {
+  --bg: #e7f7fe;
+  --primary-shadow: rgba(14, 164, 233, 0.184);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Lato", sans-serif;
+}
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
