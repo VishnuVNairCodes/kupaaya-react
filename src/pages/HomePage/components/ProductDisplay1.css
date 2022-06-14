@@ -1,0 +1,39 @@
+.display-1 {
+  background-color: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin: 0 8.5%;
+}
+
+.display-1-img-container {
+  flex-basis: 20%;
+  position: relative;
+}
+
+.display-1-img-container:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.display-1-img {
+  height: 6rem;
+  object-fit: cover;
+}
+
+.display-1-img-text {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  color: var(--primary);
+  background-color: var(--white);
+  padding: 0.1rem;
+  border-radius: 0.1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
