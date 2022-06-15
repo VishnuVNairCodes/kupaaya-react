@@ -1,0 +1,10 @@
+.main {
+  flex: 4;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2.5rem;
+  padding: 2.5rem;
+  background-color: var(--bg);
+}

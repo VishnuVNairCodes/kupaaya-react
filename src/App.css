@@ -22,3 +22,12 @@ body {
   padding: 0;
   box-sizing: inherit;
 }
+
+.outer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--bg);
+  padding-bottom: 2rem;
+  gap: 2rem;
+}
