@@ -1,0 +1,15 @@
+.wishlist-main {
+  padding: 0 2rem;
+}
+
+.wishlist-heading {
+  margin-bottom: 2rem;
+}
+
+.wishlist-display {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2.5rem;
+}
