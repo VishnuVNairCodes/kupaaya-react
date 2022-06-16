@@ -8,7 +8,7 @@ import "./HomePage.css";
 
 const HomePage = () => {
   return (
-    <div className="home-container">
+    <div className="outer-container">
       <NavBar />
       <ProductDisplay1 />
       <ProductDisplay2 />

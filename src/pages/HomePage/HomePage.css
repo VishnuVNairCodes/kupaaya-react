@@ -1,8 +1,1 @@
-.home-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: var(--bg);
-  padding-bottom: 2rem;
-  gap: 2rem;
-}
+
