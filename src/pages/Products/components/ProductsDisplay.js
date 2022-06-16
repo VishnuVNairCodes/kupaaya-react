@@ -1,8 +1,8 @@
-import "./Main.css";
+import "./ProductsDisplay.css";
 
-const Main = () => {
+const ProductsDisplay = () => {
   return (
-    <main className="main">
+    <main className="products-display">
       <div className="card-container shadow">
         <div className="card-badge">Best Seller</div>
         <div className="card-image-container">
@@ -201,4 +201,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default ProductsDisplay;
