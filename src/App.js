@@ -2,15 +2,15 @@ import { Route, Routes } from "react-router-dom";
 
 import "./App.css";
 
-import Cart from "./pages/Cart/Cart";
-import HomePage from "./pages/HomePage/HomePage";
-import Login from "./pages/Login/Login";
-import Products from "./pages/Products/Products";
-import Wishlist from "./pages/Wishlist/Wishlist";
+import { Cart } from "./pages/Cart/Cart";
+import { HomePage } from "./pages/HomePage/HomePage";
+import { Login } from "./pages/Login/Login";
+import { Products } from "./pages/Products/Products";
+import { Wishlist } from "./pages/Wishlist/Wishlist";
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="app">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/products" element={<Products />} />
@@ -22,4 +22,4 @@ const App = () => {
   );
 };
 
-export default App;
+export { App };

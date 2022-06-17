@@ -201,4 +201,4 @@ const ProductsDisplay = () => {
   );
 };
 
-export default ProductsDisplay;
+export { ProductsDisplay };

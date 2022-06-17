@@ -1,8 +1,8 @@
 import React from "react";
-import NavBar from "../../components/NavBar";
-import ProductDisplay1 from "./components/ProductDisplay1";
-import ProductDisplay2 from "./components/ProductDisplay2";
-import ProductDisplay3 from "./components/ProductDisplay3";
+import { NavBar } from "../../components/NavBar";
+import { ProductDisplay1 } from "./components/ProductDisplay1";
+import { ProductDisplay2 } from "./components/ProductDisplay2";
+import { ProductDisplay3 } from "./components/ProductDisplay3";
 
 import "./HomePage.css";
 
@@ -17,4 +17,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export { HomePage };

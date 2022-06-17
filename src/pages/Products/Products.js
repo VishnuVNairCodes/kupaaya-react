@@ -1,6 +1,6 @@
-import NavBar from "../../components/NavBar";
-import SideBar from "./components/SideBar";
-import ProductsDisplay from "./components/ProductsDisplay";
+import { NavBar } from "../../components/NavBar";
+import { SideBar } from "./components/SideBar";
+import { ProductsDisplay } from "./components/ProductsDisplay";
 import "./Products.css";
 
 const Products = () => {
@@ -15,4 +15,4 @@ const Products = () => {
   );
 };
 
-export default Products;
+export { Products };

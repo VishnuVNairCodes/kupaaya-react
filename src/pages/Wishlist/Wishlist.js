@@ -1,4 +1,4 @@
-import NavBar from "../../components/NavBar";
+import { NavBar } from "../../components/NavBar";
 import "./Wishlist.css";
 
 const Wishlist = () => {
@@ -194,4 +194,4 @@ const Wishlist = () => {
   );
 };
 
-export default Wishlist;
+export { Wishlist };
