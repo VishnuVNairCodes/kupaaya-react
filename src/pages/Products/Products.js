@@ -1,18 +1,18 @@
-import NavBar from "../../components/NavBar";
-import SideBar from "./components/SideBar";
-import Main from "./components/Main";
+import { NavBar } from "../../components/NavBar";
+import { SideBar } from "./components/SideBar";
+import { ProductsDisplay } from "./components/ProductsDisplay";
 import "./Products.css";
 
 const Products = () => {
   return (
     <div className="outer-container">
       <NavBar />
-      <div className="content">
+      <div className="products-content">
         <SideBar />
-        <Main />
+        <ProductsDisplay />
       </div>
     </div>
   );
 };
 
-export default Products;
+export { Products };
