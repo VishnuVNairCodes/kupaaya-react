@@ -22,27 +22,27 @@ const ProductDisplay1 = () => {
         </div>
         <div className="display-1-img-container">
           <img
-            src={require("../../../assets/baby-shoes.jpg")}
+            src={require("../../../assets/casuals.jpg")}
             alt="product"
             className="display-1-img img-responsive"
           />
-          <div className="display-1-img-text">Baby Shoes</div>
+          <div className="display-1-img-text">Casuals</div>
         </div>
         <div className="display-1-img-container">
           <img
-            src={require("../../../assets/swagger-kid.jpg")}
+            src={require("../../../assets/birthdays.jpg")}
             alt="product"
             className="display-1-img img-responsive"
           />
-          <div className="display-1-img-text">Swagger Kid</div>
+          <div className="display-1-img-text">Birthdays</div>
         </div>
         <div className="display-1-img-container">
           <img
-            src={require("../../../assets/toy.jpg")}
+            src={require("../../../assets/ethnicwear.jpg")}
             alt="product"
             className="display-1-img img-responsive"
           />
-          <div className="display-1-img-text">Toys</div>
+          <div className="display-1-img-text">Ethnicwear</div>
         </div>
       </div>
     </>

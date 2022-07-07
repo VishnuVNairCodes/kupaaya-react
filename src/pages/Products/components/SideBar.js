@@ -24,22 +24,44 @@ const SideBar = () => {
           </div>
         </li>
         <li className="filter-list-item category">
-          <h4 className="category-heading">Category</h4>
+          <h4 className="category-heading">Shop For</h4>
           <div className="checkbox-container">
             <label>
               <input type="checkbox" className="checkbox" />
-              Baby Clothing
+              Boy
             </label>
             <label>
               <input type="checkbox" className="checkbox" checked />
-              Baby Clothing
-            </label>
-            <label>
-              <input type="checkbox" className="checkbox" />
-              Baby Clothing
+              Girl
             </label>
           </div>
         </li>
+        <li className="filter-list-item category">
+          <h4 className="category-heading">Categories</h4>
+          <div className="checkbox-container">
+            <label>
+              <input type="checkbox" className="checkbox" />
+              Casuals
+            </label>
+            <label>
+              <input type="checkbox" className="checkbox" checked />
+              Birthdays
+            </label>
+            <label>
+              <input type="checkbox" className="checkbox" />
+              Ethnicwear
+            </label>
+            <label>
+              <input type="checkbox" className="checkbox" />
+              Nightwear
+            </label>
+            <label>
+              <input type="checkbox" className="checkbox" />
+              Accessories
+            </label>
+          </div>
+        </li>
+
         <li className="filter-list-item rating">
           <h4 className="rating-heading">Rating</h4>
           <div className="radio-container">
@@ -66,11 +88,11 @@ const SideBar = () => {
           <div className="radio-container">
             <label>
               <input type="radio" name="sort" className="radio" />
-              High to Low
+              Price: High to Low
             </label>
             <label>
               <input type="radio" name="sort" className="radio" checked />
-              Low to High
+              Price: Low to High
             </label>
           </div>
         </li>
