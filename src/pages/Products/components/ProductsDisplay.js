@@ -30,6 +30,16 @@ const ProductsDisplay = () => {
                     src={product.coverImg}
                     alt="card"
                   />
+                  <div class="rating-badge-container">
+                    <span class="rating-badge-value">{product.rating}</span>
+                    <span class="rating-badge-icon">
+                      <i class="fa-solid fa-star"></i>
+                    </span>
+                    <span class="rating-badge-number">
+                      <span class="rating-badge-separator">|</span>
+                      {product.totalRatings}
+                    </span>
+                  </div>
                 </div>
                 <div className="card-details-container">
                   <div className="card-details-header">
