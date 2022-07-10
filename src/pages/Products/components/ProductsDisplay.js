@@ -16,7 +16,7 @@ const ProductsDisplay = () => {
   return (
     <main className="products-display">
       {loader && <p>Loading...</p>}
-      <ul>
+      <ul className="products-display-listing">
         {products.map((product) => {
           return (
             <li>
