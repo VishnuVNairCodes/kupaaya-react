@@ -17,7 +17,7 @@ export const products = [
     discountPercent: "55",
     badge: "",
     coverImg:
-      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/14842904/2021/7/15/2edbb2d3-e926-43e0-9099-7512aba312b41626339664433Peppermintpeach1.jpg",
+      "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/14842904/2021/7/15/2edbb2d3-e926-43e0-9099-7512aba312b41626339664433Peppermintpeach1.jpg",
     totalRatings: "700",
     rating: "4.3",
     inStock: true,
