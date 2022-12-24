@@ -1,6 +1,20 @@
+import { useFilter } from "../../../context/filter-context";
 import "./SideBar.css";
 
 const SideBar = () => {
+  const {
+    filterState: {
+      showBoy,
+      showGirl,
+      showUnisex,
+      showCasuals,
+      showBirthdays,
+      showEthnicwear,
+      showNightwear,
+      showAccessories,
+    },
+    filterDispatch,
+  } = useFilter();
   return (
     <aside className="sidebar">
       <ul className="filters-list">
@@ -27,12 +41,37 @@ const SideBar = () => {
           <h4 className="category-heading">Shop For</h4>
           <div className="checkbox-container">
             <label>
-              <input type="checkbox" className="checkbox" />
+              <input
+                type="checkbox"
+                className="checkbox"
+                checked={showBoy}
+                onChange={() => {
+                  filterDispatch({ type: "TOGGLE_BOY" });
+                }}
+              />
               Boy
             </label>
             <label>
-              <input type="checkbox" className="checkbox" checked />
+              <input
+                type="checkbox"
+                className="checkbox"
+                checked={showGirl}
+                onChange={() => {
+                  filterDispatch({ type: "TOGGLE_GIRL" });
+                }}
+              />
               Girl
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                className="checkbox"
+                checked={showUnisex}
+                onChange={() => {
+                  filterDispatch({ type: "TOGGLE_UNISEX" });
+                }}
+              />
+              Unisex
             </label>
           </div>
         </li>
@@ -40,28 +79,62 @@ const SideBar = () => {
           <h4 className="category-heading">Categories</h4>
           <div className="checkbox-container">
             <label>
-              <input type="checkbox" className="checkbox" />
+              <input
+                type="checkbox"
+                className="checkbox"
+                checked={showCasuals}
+                onChange={() => {
+                  filterDispatch({ type: "TOGGLE_CASUALS" });
+                }}
+              />
               Casuals
             </label>
             <label>
-              <input type="checkbox" className="checkbox" checked />
+              <input
+                type="checkbox"
+                className="checkbox"
+                checked={showBirthdays}
+                onChange={() => {
+                  filterDispatch({ type: "TOGGLE_BIRTHDAYS" });
+                }}
+              />
               Birthdays
             </label>
             <label>
-              <input type="checkbox" className="checkbox" />
+              <input
+                type="checkbox"
+                className="checkbox"
+                checked={showEthnicwear}
+                onChange={() => {
+                  filterDispatch({ type: "TOGGLE_ETHNICWEAR" });
+                }}
+              />
               Ethnicwear
             </label>
             <label>
-              <input type="checkbox" className="checkbox" />
+              <input
+                type="checkbox"
+                className="checkbox"
+                checked={showNightwear}
+                onChange={() => {
+                  filterDispatch({ type: "TOGGLE_NIGHTWEAR" });
+                }}
+              />
               Nightwear
             </label>
             <label>
-              <input type="checkbox" className="checkbox" />
+              <input
+                type="checkbox"
+                className="checkbox"
+                checked={showAccessories}
+                onChange={() => {
+                  filterDispatch({ type: "TOGGLE_ACCESSORIES" });
+                }}
+              />
               Accessories
             </label>
           </div>
         </li>
-
         <li className="filter-list-item rating">
           <h4 className="rating-heading">Rating</h4>
           <div className="radio-container">
