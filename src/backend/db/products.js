@@ -920,7 +920,7 @@ export const products = [
     totalRatings: "50",
     rating: "3.6",
     inStock: true,
-    categories: ["girl", "boy", "accessories"],
+    categories: ["unisex", "accessories"],
   },
   {
     _id: uuid(),
@@ -937,7 +937,7 @@ export const products = [
     totalRatings: "29",
     rating: "4.5",
     inStock: true,
-    categories: ["girl", "boy", "accessories"],
+    categories: ["unisex", "accessories"],
   },
   {
     _id: uuid(),
@@ -1022,7 +1022,7 @@ export const products = [
     totalRatings: "87",
     rating: "4.1",
     inStock: true,
-    categories: ["girl", "boy", "accessories"],
+    categories: ["unisex", "accessories"],
   },
   {
     _id: uuid(),
@@ -1122,7 +1122,7 @@ export const products = [
     totalRatings: "677",
     rating: "4.6",
     inStock: true,
-    categories: ["girl", "boy", "accessories"],
+    categories: ["unisex", "accessories"],
   },
   {
     _id: uuid(),
@@ -1139,6 +1139,6 @@ export const products = [
     totalRatings: "307",
     rating: "4.5",
     inStock: true,
-    categories: ["girl", "accessories"],
+    categories: ["unisex", "accessories"],
   },
 ];
