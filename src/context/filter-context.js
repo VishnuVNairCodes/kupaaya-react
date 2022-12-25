@@ -41,7 +41,7 @@ const FilterProvider = ({ children }) => {
     showCasuals: false,
     showBirthdays: false,
     showEthnicwear: false,
-    showNightWear: false,
+    showNightwear: false,
     showAccessories: false,
     maxPrice: "3500",
   });
