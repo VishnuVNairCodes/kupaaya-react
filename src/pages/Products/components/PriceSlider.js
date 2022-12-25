@@ -12,8 +12,8 @@ const PriceSlider = () => {
       <div className="price-slider-container">
         <input
           type="range"
-          min="0"
-          max="3500"
+          min="300"
+          max="3800"
           step="500"
           value={maxPrice}
           onChange={(e) =>
@@ -23,14 +23,14 @@ const PriceSlider = () => {
           className="price-slider"
         />
         <datalist id="tickmarks">
-          <option value="0" label="0"></option>
-          <option value="500" label="500"></option>
-          <option value="1000" label="1000"></option>
-          <option value="1500" label="1500"></option>
-          <option value="2000" label="2000"></option>
-          <option value="2500" label="2500"></option>
-          <option value="3000" label="3000"></option>
-          <option value="3500" label="3500"></option>
+          <option value="300" label="300"></option>
+          <option value="800" label="800"></option>
+          <option value="1300" label="1300"></option>
+          <option value="1800" label="1800"></option>
+          <option value="2300" label="2300"></option>
+          <option value="2800" label="2800"></option>
+          <option value="3300" label="3300"></option>
+          <option value="3800" label="3800"></option>
         </datalist>
       </div>
     </>

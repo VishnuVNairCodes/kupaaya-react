@@ -43,7 +43,7 @@ const FilterProvider = ({ children }) => {
     showEthnicwear: false,
     showNightwear: false,
     showAccessories: false,
-    maxPrice: "3500",
+    maxPrice: "3800",
   });
 
   return (
