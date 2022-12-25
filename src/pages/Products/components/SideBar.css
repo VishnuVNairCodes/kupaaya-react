@@ -25,23 +25,6 @@
   align-items: center;
 }
 
-.price-slider-heading,
-.category-heading,
-.rating-heading,
-.sort-heading {
-  margin-bottom: 0.5rem;
-}
-
-.price-slider-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.price-range {
-  display: flex;
-  justify-content: space-between;
-}
-
 .checkbox-container,
 .radio-container {
   display: flex;

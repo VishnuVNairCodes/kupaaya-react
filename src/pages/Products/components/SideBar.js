@@ -1,4 +1,5 @@
 import { useFilter } from "../../../context/filter-context";
+import { PriceSlider } from "./PriceSlider";
 import "./SideBar.css";
 
 const SideBar = () => {
@@ -21,21 +22,8 @@ const SideBar = () => {
         <h4 className="filters-list-heading">
           Filters<button className="btn btn-secondary-outline h5">Clear</button>
         </h4>
-        <li className="filters-list-item price-slider">
-          <h4 className="price-slider-heading">Price</h4>
-          <div className="price-slider-container">
-            <div className="price-range">
-              <span>₹ 200</span>
-              <span>₹ 10000</span>
-            </div>
-            <input
-              type="range"
-              min="200"
-              max="10000"
-              value="5000"
-              className="price-slider"
-            />
-          </div>
+        <li className="filters-list-item">
+          <PriceSlider />
         </li>
         <li className="filter-list-item category">
           <h4 className="category-heading">Shop For</h4>

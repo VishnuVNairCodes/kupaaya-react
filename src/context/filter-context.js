@@ -24,6 +24,11 @@ const FilterProvider = ({ children }) => {
           ...filterState,
           showAccessories: !filterState.showAccessories,
         };
+      case "SET_MAX_PRICE":
+        return {
+          ...filterState,
+          maxPrice: filterAction.value,
+        };
       default:
         return filterState;
     }
@@ -38,6 +43,7 @@ const FilterProvider = ({ children }) => {
     showEthnicwear: false,
     showNightWear: false,
     showAccessories: false,
+    maxPrice: "3500",
   });
 
   return (
