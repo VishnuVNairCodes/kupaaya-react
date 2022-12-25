@@ -12,7 +12,7 @@ const ProductDisplay2 = () => {
           />
           <div className="display-2-cta">
             <p>
-              Cute <span className="text-highlight">dud</span> for your Cute
+              Cute <span className="text-highlight">duds</span> for your Cute
               <span className="text-highlight"> kid</span>
             </p>
             <button className="btn btn-primary">Shop Now</button>
