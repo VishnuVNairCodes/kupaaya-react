@@ -29,6 +29,11 @@ const FilterProvider = ({ children }) => {
           ...filterState,
           maxPrice: filterAction.value,
         };
+      case "SET_MIN_RATING":
+        return {
+          ...filterState,
+          minRating: filterAction.value,
+        };
       default:
         return filterState;
     }
@@ -44,6 +49,7 @@ const FilterProvider = ({ children }) => {
     showNightwear: false,
     showAccessories: false,
     maxPrice: "3800",
+    minRating: "1",
   });
 
   return (

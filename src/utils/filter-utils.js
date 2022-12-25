@@ -2,7 +2,8 @@ const categoryFilter = (products, category) =>
   products.filter((product) => product.categories.includes(category));
 const priceFilter = (products, maxPrice) =>
   products.filter((product) => product.discountedPrice <= Number(maxPrice));
-const ratingFilter = (products) => products;
+const ratingFilter = (products, minRating) =>
+  products.filter((product) => product.rating >= Number(minRating));
 const genderFilter = (products, showBoy, showGirl, showUnisex) => {
   if (showBoy || showGirl || showUnisex) {
     let filteredProducts = [];
@@ -77,10 +78,11 @@ const getFilteredProducts = (
     showNightwear,
     showAccessories,
     maxPrice,
+    minRating,
   }
 ) => {
   const priceFiltered = priceFilter(dataToFilter, maxPrice);
-  const ratingAndPriceFiltered = ratingFilter(priceFiltered);
+  const ratingAndPriceFiltered = ratingFilter(priceFiltered, minRating);
   const genderAndRatingAndPriceFiltered = genderFilter(
     ratingAndPriceFiltered,
     showBoy,

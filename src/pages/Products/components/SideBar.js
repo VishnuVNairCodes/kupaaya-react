@@ -125,22 +125,27 @@ const SideBar = () => {
         </li>
         <li className="filter-list-item rating">
           <h4 className="rating-heading">Rating</h4>
-          <div className="radio-container">
+          <div
+            className="radio-container"
+            onChange={(e) =>
+              filterDispatch({ type: "SET_MIN_RATING", value: e.target.value })
+            }
+          >
             <label>
-              <input type="radio" name="rating" className="radio" />4 Stars &
-              above
-            </label>
-            <label>
-              <input type="radio" name="rating" className="radio" checked />3
+              <input type="radio" name="rating" value="4" className="radio" />4
               Stars & above
             </label>
             <label>
-              <input type="radio" name="rating" className="radio" />2 Stars &
-              above
+              <input type="radio" name="rating" value="3" className="radio" />3
+              Stars & above
             </label>
             <label>
-              <input type="radio" name="rating" className="radio" />1 Stars &
-              above
+              <input type="radio" name="rating" value="2" className="radio" />2
+              Stars & above
+            </label>
+            <label>
+              <input type="radio" name="rating" value="1" className="radio" />1
+              Stars & above
             </label>
           </div>
         </li>
