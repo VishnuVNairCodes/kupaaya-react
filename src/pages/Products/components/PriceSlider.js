@@ -1,4 +1,4 @@
-import { useFilter } from "../../../context/filter-context";
+import { useFilter } from "../../../contexts/filter-context";
 import "./PriceSlider.css";
 
 const PriceSlider = () => {

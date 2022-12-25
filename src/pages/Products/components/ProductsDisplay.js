@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { useFilter } from "../../../context/filter-context";
+import { useFilter } from "../../../contexts/filter-context";
 import { getFilteredProducts } from "../../../utils/filter-utils";
 import { getSortedProducts } from "../../../utils/sort-utils";
 import "./ProductsDisplay.css";
