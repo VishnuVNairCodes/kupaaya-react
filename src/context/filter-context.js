@@ -34,6 +34,11 @@ const FilterProvider = ({ children }) => {
           ...filterState,
           minRating: filterAction.value,
         };
+      case "SET_SORT":
+        return {
+          ...filterState,
+          sortOrder: filterAction.value,
+        };
       default:
         return filterState;
     }
@@ -50,6 +55,7 @@ const FilterProvider = ({ children }) => {
     showAccessories: false,
     maxPrice: "3800",
     minRating: "1",
+    sortOrder: "NULL",
   });
 
   return (

@@ -151,13 +151,28 @@ const SideBar = () => {
         </li>
         <li className="filter-list-item sort">
           <h4 className="sort-heading">Sort By</h4>
-          <div className="radio-container">
+          <div
+            className="radio-container"
+            onChange={(e) =>
+              filterDispatch({ type: "SET_SORT", value: e.target.value })
+            }
+          >
             <label>
-              <input type="radio" name="sort" className="radio" />
+              <input
+                type="radio"
+                name="sort"
+                className="radio"
+                value="DESCENDING"
+              />
               Price: High to Low
             </label>
             <label>
-              <input type="radio" name="sort" className="radio" checked />
+              <input
+                type="radio"
+                name="sort"
+                className="radio"
+                value="ASCENDING"
+              />
               Price: Low to High
             </label>
           </div>

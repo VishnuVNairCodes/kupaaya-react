@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useFilter } from "../../../context/filter-context";
 import { getFilteredProducts } from "../../../utils/filter-utils";
+import { getSortedProducts } from "../../../utils/sort-utils";
 import "./ProductsDisplay.css";
 
 const ProductsDisplay = () => {
@@ -19,12 +20,16 @@ const ProductsDisplay = () => {
   }, []);
 
   const filteredProducts = getFilteredProducts(products, filterState);
+  const sortedAndFilteredProducts = getSortedProducts(
+    filteredProducts,
+    filterState.sortOrder
+  );
 
   return (
     <main className="products-display">
       {loader && <p>Loading...</p>}
       <ul className="products-display-listing">
-        {filteredProducts.map((product) => {
+        {sortedAndFilteredProducts.map((product) => {
           return (
             <li key={product._id}>
               <div className="card-container">
