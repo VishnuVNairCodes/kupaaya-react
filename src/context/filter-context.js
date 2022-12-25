@@ -3,6 +3,19 @@ import { createContext, useContext, useReducer } from "react";
 const FilterContext = createContext(null);
 
 const FilterProvider = ({ children }) => {
+  const filterStateInitial = {
+    showBoy: false,
+    showGirl: false,
+    showUnisex: false,
+    showCasuals: false,
+    showBirthdays: false,
+    showEthnicwear: false,
+    showNightwear: false,
+    showAccessories: false,
+    maxPrice: "3800",
+    minRating: "NULL",
+    sortOrder: "NULL",
+  };
   const filterReducerFunc = (filterState, filterAction) => {
     switch (filterAction.type) {
       case "TOGGLE_BOY":
@@ -39,24 +52,19 @@ const FilterProvider = ({ children }) => {
           ...filterState,
           sortOrder: filterAction.value,
         };
+      case "CLEAR_FILTERS":
+        return {
+          ...filterStateInitial,
+        };
       default:
         return filterState;
     }
   };
 
-  const [filterState, filterDispatch] = useReducer(filterReducerFunc, {
-    showBoy: false,
-    showGirl: false,
-    showUnisex: false,
-    showCasuals: false,
-    showBirthdays: false,
-    showEthnicwear: false,
-    showNightwear: false,
-    showAccessories: false,
-    maxPrice: "3800",
-    minRating: "1",
-    sortOrder: "NULL",
-  });
+  const [filterState, filterDispatch] = useReducer(
+    filterReducerFunc,
+    filterStateInitial
+  );
 
   return (
     <FilterContext.Provider value={{ filterState, filterDispatch }}>

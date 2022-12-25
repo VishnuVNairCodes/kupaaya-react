@@ -13,14 +13,30 @@ const SideBar = () => {
       showEthnicwear,
       showNightwear,
       showAccessories,
+      minRating,
+      sortOrder,
     },
     filterDispatch,
   } = useFilter();
+  const handleChangeSortOrder = (e) =>
+    filterDispatch({ type: "SET_SORT", value: e.target.value });
+  const handleChangeMinRating = (e) =>
+    filterDispatch({
+      type: "SET_MIN_RATING",
+      value: e.target.value,
+    });
+
   return (
     <aside className="sidebar">
       <ul className="filters-list">
         <h4 className="filters-list-heading">
-          Filters<button className="btn btn-secondary-outline h5">Clear</button>
+          Filters
+          <button
+            onClick={() => filterDispatch({ type: "CLEAR_FILTERS" })}
+            className="btn btn-secondary-outline h5"
+          >
+            Clear
+          </button>
         </h4>
         <li className="filters-list-item">
           <PriceSlider />
@@ -125,44 +141,64 @@ const SideBar = () => {
         </li>
         <li className="filter-list-item rating">
           <h4 className="rating-heading">Rating</h4>
-          <div
-            className="radio-container"
-            onChange={(e) =>
-              filterDispatch({ type: "SET_MIN_RATING", value: e.target.value })
-            }
-          >
+          <div className="radio-container">
             <label>
-              <input type="radio" name="rating" value="4" className="radio" />4
-              Stars & above
+              <input
+                type="radio"
+                name="rating"
+                value="4"
+                checked={minRating === "4"}
+                onChange={handleChangeMinRating}
+                className="radio"
+              />
+              4 Stars & above
             </label>
             <label>
-              <input type="radio" name="rating" value="3" className="radio" />3
-              Stars & above
+              <input
+                type="radio"
+                name="rating"
+                value="3"
+                checked={minRating === "3"}
+                onChange={handleChangeMinRating}
+                className="radio"
+              />
+              3 Stars & above
             </label>
             <label>
-              <input type="radio" name="rating" value="2" className="radio" />2
-              Stars & above
+              <input
+                type="radio"
+                name="rating"
+                value="2"
+                checked={minRating === "2"}
+                onChange={handleChangeMinRating}
+                className="radio"
+              />
+              2 Stars & above
             </label>
             <label>
-              <input type="radio" name="rating" value="1" className="radio" />1
-              Stars & above
+              <input
+                type="radio"
+                name="rating"
+                value="1"
+                checked={minRating === "1"}
+                onChange={handleChangeMinRating}
+                className="radio"
+              />
+              1 Stars & above
             </label>
           </div>
         </li>
         <li className="filter-list-item sort">
           <h4 className="sort-heading">Sort By</h4>
-          <div
-            className="radio-container"
-            onChange={(e) =>
-              filterDispatch({ type: "SET_SORT", value: e.target.value })
-            }
-          >
+          <div className="radio-container">
             <label>
               <input
                 type="radio"
                 name="sort"
-                className="radio"
                 value="DESCENDING"
+                checked={sortOrder === "DESCENDING"}
+                onChange={handleChangeSortOrder}
+                className="radio"
               />
               Price: High to Low
             </label>
@@ -170,8 +206,10 @@ const SideBar = () => {
               <input
                 type="radio"
                 name="sort"
-                className="radio"
                 value="ASCENDING"
+                checked={sortOrder === "ASCENDING"}
+                onChange={handleChangeSortOrder}
+                className="radio"
               />
               Price: Low to High
             </label>
