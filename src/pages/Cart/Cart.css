@@ -2,20 +2,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.6rem;
-  padding: 3.2rem;
+  gap: var(--sp-tens2);
+  padding: var(--sp-thirtys);
   align-self: center;
   width: 100%;
 }
 
 .cart-heading {
   text-align: center;
-  margin-bottom: 1.6rem;
+  margin-bottom: var(--sp-tens2);
 }
 
 .cart-content {
   display: flex;
-  gap: 4.8rem;
+  gap: var(--sp-fourtys);
   align-items: flex-start;
 }
 
@@ -23,46 +23,46 @@
 .cart-display {
   display: flex;
   flex-direction: column;
-  gap: 3.2rem;
+  gap: var(--sp-thirtys);
 }
 
 .cart-change-qty-container {
   display: flex;
-  gap: 1.6rem;
+  gap: var(--sp-tens2);
 }
 
 .cart-change-qty-container .textbox-container {
-  width: 3.2rem;
+  width: var(--sp-thirtys);
 }
 
 .cart-change-qty-container .textbox {
-  border: 2px solid var(--primary);
+  border: var(--sp-fractions1) solid var(--clr-primary);
 }
 
 .btn-cart-change-qty {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 1.6rem;
-  height: 1.6rem;
+  width: var(--sp-tens2);
+  height: var(--sp-tens2);
   border-radius: 50%;
   border: none;
-  font-size: 1.6rem;
-  padding: 1.6rem;
-  color: var(--white);
-  background-color: var(--primary);
+  font-size: var(--f-tens4);
+  padding: var(--sp-tens2);
+  color: var(--clr-white);
+  background-color: var(--clr-primary);
 }
 .btn-cart-change-qty:hover {
-  background-color: var(--primary-hover);
+  background-color: var(--clr-primary-hover);
 }
 
 /* || Cart Summary || */
 .cart-summary {
   display: flex;
   flex-direction: column;
-  padding: 1.6rem;
-  border-radius: 4px;
-  background-color: var(--white);
+  padding: var(--sp-tens2);
+  border-radius: var(--br-1);
+  background-color: var(--clr-white);
   font-weight: bold;
 }
 
@@ -70,8 +70,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 4.8rem;
-  margin-bottom: 1rem;
+  gap: var(--sp-fourtys);
+  margin-bottom: var(--sp-tens1);
 }
 
 .cart-summary-header {
@@ -82,7 +82,7 @@
 .cart-summary-coupons,
 .cart-summary-price,
 .cart-summary-apply-coupon {
-  border-bottom: 2px solid var(--black);
+  border-bottom: var(--sp-fractions1) solid var(--clr-black);
 }
 
 .cart-summary-header,
@@ -90,9 +90,9 @@
 .cart-summary-price,
 .cart-summary-apply-coupon,
 .cart-summary-subtotal {
-  padding: 2rem;
+  padding: var(--sp-tens2);
 }
 
 .cart-summary-element-btn {
-  padding: 6px 1.2rem;
+  padding: 6px var(--sp-tens1);
 }

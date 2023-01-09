@@ -1,5 +1,5 @@
 .display-2 {
-  background-color: var(--bg);
+  background-color: var(--clr-bg);
   margin: 0 8.5%;
 }
 
@@ -16,22 +16,22 @@
 .display-2-cta {
   display: flex;
   flex-direction: column;
-  gap: 1.6rem;
+  gap: var(--sp-tens2);
   align-items: center;
   position: absolute;
-  top: 8rem;
-  left: 8rem;
+  top: var(--sp-eightys);
+  left: var(--sp-eightys);
   z-index: 1;
-  color: var(--white);
-  font-size: 6.4rem;
+  color: var(--clr-white);
+  font-size: var(--sp-sixtys);
   font-weight: bold;
 }
 
 .display-2-cta .text-highlight {
-  color: var(--primary);
+  color: var(--clr-primary);
 }
 
 .display-2-cta > .btn {
-  font-size: 3.2rem;
-  padding: 1.6rem;
+  font-size: var(--f-thirtys1);
+  padding: var(--sp-tens2);
 }

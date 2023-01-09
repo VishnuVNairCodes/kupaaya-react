@@ -1,9 +1,9 @@
 .display-1 {
-  background-color: var(--bg);
+  background-color: var(--clr-bg);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 3.2rem;
+  gap: var(--sp-thirtys);
   margin: 0 8.5%;
 }
 
@@ -19,21 +19,20 @@
 }
 
 .display-1-img {
-  height: 9.6rem;
+  height: var(--sp-ninetys);
   object-fit: cover;
 }
 
 .display-1-img-text {
   position: absolute;
-  bottom: 1.6rem;
+  bottom: var(--sp-tens2);
   left: 0;
   right: 0;
   z-index: 1;
-  color: var(--primary);
-  background-color: var(--white);
-  padding: 2px;
-  border-radius: 2px;
-  font-size: 1.6rem;
+  color: var(--clr-primary);
+  background-color: var(--clr-white);
+  padding: var(--sp-fractions1);
+  font-size: var(--f-tens4);
   font-weight: bold;
   text-align: center;
 }

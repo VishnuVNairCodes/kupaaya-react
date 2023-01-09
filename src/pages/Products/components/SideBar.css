@@ -1,21 +1,21 @@
 .sidebar {
   flex: 1;
-  padding: 4rem;
-  background-color: var(--bg-sidebar);
-  border-right: 3px solid var(--white);
+  padding: var(--sp-thirtys);
+  background-color: var(--clr-bg-sidebar);
+  border-right: var(--sp-fractions2) solid var(--clr-white);
 }
 
 .sidebar .btn-secondary-outline {
-  top: 2.4rem;
-  right: 2.4rem;
-  font-size: 2rem;
-  padding: 2px;
+  top: var(--sp-twentys);
+  right: var(--sp-twentys);
+  font-size: var(--f-twentys1);
+  padding: var(--sp-fractions1);
 }
 
 .filters-list {
   display: flex;
   flex-direction: column;
-  gap: 2.4rem;
+  gap: var(--sp-twentys);
   list-style: none;
 }
 
@@ -29,6 +29,6 @@
 .radio-container {
   display: flex;
   flex-direction: column;
-  gap: 1.6rem;
+  gap: var(--sp-tens2);
   align-items: flex-start;
 }

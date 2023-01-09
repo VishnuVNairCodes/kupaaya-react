@@ -1,9 +1,9 @@
 .wishlist-main {
-  padding: 0 3.2rem;
+  padding: 0 var(--sp-thirtys);
 }
 
 .wishlist-heading {
-  margin-bottom: 3.2rem;
+  margin-bottom: var(--sp-thirtys);
 }
 
 .wishlist-display {
@@ -11,5 +11,5 @@
   flex-flow: row wrap;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 4rem;
+  gap: var(--sp-thirtys);
 }
