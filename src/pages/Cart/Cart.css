@@ -2,20 +2,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
-  padding: 2rem;
+  gap: 1.6rem;
+  padding: 3.2rem;
   align-self: center;
   width: 100%;
 }
 
 .cart-heading {
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.6rem;
 }
 
 .cart-content {
   display: flex;
-  gap: 3rem;
+  gap: 4.8rem;
   align-items: flex-start;
 }
 
@@ -23,16 +23,16 @@
 .cart-display {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3.2rem;
 }
 
 .cart-change-qty-container {
   display: flex;
-  gap: 1rem;
+  gap: 1.6rem;
 }
 
 .cart-change-qty-container .textbox-container {
-  width: 2rem;
+  width: 3.2rem;
 }
 
 .cart-change-qty-container .textbox {
@@ -43,12 +43,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 1rem;
-  height: 1rem;
+  width: 1.6rem;
+  height: 1.6rem;
   border-radius: 50%;
   border: none;
-  font-size: 1rem;
-  padding: 1rem;
+  font-size: 1.6rem;
+  padding: 1.6rem;
   color: var(--white);
   background-color: var(--primary);
 }
@@ -60,7 +60,7 @@
 .cart-summary {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 1.6rem;
   border-radius: 4px;
   background-color: var(--white);
   font-weight: bold;
@@ -70,8 +70,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 3rem;
-  margin-bottom: 10px;
+  gap: 4.8rem;
+  margin-bottom: 1rem;
 }
 
 .cart-summary-header {
@@ -90,9 +90,9 @@
 .cart-summary-price,
 .cart-summary-apply-coupon,
 .cart-summary-subtotal {
-  padding: 1.3rem;
+  padding: 2rem;
 }
 
 .cart-summary-element-btn {
-  padding: 6px 12px;
+  padding: 6px 1.2rem;
 }

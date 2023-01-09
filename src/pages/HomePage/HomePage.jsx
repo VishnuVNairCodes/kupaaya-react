@@ -4,8 +4,6 @@ import { ProductDisplay1 } from "./components/ProductDisplay1";
 import { ProductDisplay2 } from "./components/ProductDisplay2";
 import { ProductDisplay3 } from "./components/ProductDisplay3";
 
-import "./HomePage.css";
-
 const HomePage = () => {
   return (
     <div className="outer-container">
