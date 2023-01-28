@@ -35,3 +35,8 @@ body {
   padding-bottom: var(--sp-thirtys);
   gap: var(--sp-thirtys);
 }
+
+.link {
+  text-decoration: none;
+  font-weight: var(--fwt-normal);
+}

@@ -1,6 +1,9 @@
+import { Link } from "react-router-dom";
+import { useFilter } from "../../../contexts/filter-context";
 import "./ProductDisplay2.css";
 
 const ProductDisplay2 = () => {
+  const { filterDispatch } = useFilter();
   return (
     <>
       <div className="display-2">
@@ -15,7 +18,13 @@ const ProductDisplay2 = () => {
               Cute <span className="text-highlight">duds</span> for your Cute
               <span className="text-highlight"> kid</span>
             </p>
-            <button className="btn btn-primary">Shop Now</button>
+            <Link
+              to="/products"
+              onClick={() => filterDispatch({ type: "CLEAR_FILTERS" })}
+              className="btn btn-primary link"
+            >
+              Shop Now
+            </Link>
           </div>
         </div>
       </div>

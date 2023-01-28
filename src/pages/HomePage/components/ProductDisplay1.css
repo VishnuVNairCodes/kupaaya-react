@@ -10,10 +10,10 @@
 .display-1-img-container {
   flex-basis: 20%;
   position: relative;
+  cursor: pointer;
 }
 
 .display-1-img-container:hover {
-  cursor: pointer;
   transform: scale(1.05);
   transition: 0.3s;
 }

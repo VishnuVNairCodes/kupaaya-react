@@ -16,7 +16,7 @@
 .display-2-cta {
   display: flex;
   flex-direction: column;
-  gap: var(--sp-tens2);
+  gap: var(--sp-thirtys);
   align-items: center;
   position: absolute;
   top: var(--sp-eightys);
@@ -33,5 +33,5 @@
 
 .display-2-cta > .btn {
   font-size: var(--f-thirtys1);
-  padding: var(--sp-tens2);
+  padding: var(--sp-tens2) var(--sp-thirtys);
 }
