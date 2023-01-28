@@ -5,7 +5,6 @@ import "./ProductDisplay3.css";
 const ProductDisplay3 = () => {
   const { filterDispatch } = useFilter();
   return (
-          <div className="badge-arrivals">NEW ARRIVALS</div>
     <div className="display-3">
       <Link
         to="/products"
