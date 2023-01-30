@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import "./App.css";
 import { Cart } from "./pages/Cart/Cart";
 import { HomePage } from "./pages/HomePage/HomePage";
 import { Login } from "./pages/Login/Login";
@@ -7,7 +8,6 @@ import { Products } from "./pages/Products/Products";
 import { Signup } from "./pages/Signup/Signup";
 import { Wishlist } from "./pages/Wishlist/Wishlist";
 import { RequiresAuth } from "./requires-auth";
-import "./App.css";
 
 const App = () => {
   return (
