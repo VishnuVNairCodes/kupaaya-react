@@ -11,15 +11,14 @@
   flex-basis: 20%;
   position: relative;
   cursor: pointer;
+  transition: transform 0.3s;
 }
 
 .display-1-img-container:hover {
   transform: scale(1.05);
-  transition: 0.3s;
 }
 
 .display-1-img {
-  height: var(--sp-ninetys);
   object-fit: cover;
 }
 
